@@ -1,0 +1,14 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 512px;
+    background-color: rgba(20, 19, 24);
+}
+.sidebar_left{
+    width: 60px;
+    height: 60px;
+    
+}
