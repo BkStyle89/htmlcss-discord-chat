@@ -3,9 +3,15 @@
     margin: 0;
     box-sizing: border-box;
 }
+/* main mesures */
+
+body{
+    background-color: rgba(20, 19, 24);;
+    width: 512px;
+}
 
 main{
-    overflow-y: auto;
+   
     flex-grow: 1;
 }
 
@@ -13,32 +19,36 @@ main{
     height: 100vh;
     display: flex;
     flex-direction: column;
-
 }
 .side_wrapper{
     background-color: rgba(28, 29, 34);
     display: flex;
     flex-grow: 1;
-    overflow: hidden;
+    margin-top: 10px;
+    overflow: scroll;
 
+    
 }
-
+/* side bar mesures */
 .side_bar{
     width: 80px;
     background-color: rgba(20, 19, 24);
-    flex-shrink: 0;
+    flex-shrink: 1;
 
 }
+/* footer */
 
 footer{
     height: 60px;
     background-color: rgba(45, 45, 53);
     flex-shrink: 0;
 }
+/* pictures info and mesures */
 
 .pictures{
     margin-top: 15px;
-    margin-left: 10px;
+    margin-left: 8px;
+    margin-right: 10px;
     img{
         width: 60px;
         margin-top: 10px;
@@ -61,8 +71,115 @@ footer{
         left: 0%;
         translate: 0% 0%;
         border-top-right-radius: 50%;
-        border-bottom-right-radius: 50%;
-        
-     
-      
+        border-bottom-right-radius: 50%;    
     }
+/* main side */
+    h1{
+        color: white;
+        padding: 2rem;
+        font-weight: 600;
+        font-family: "Tektur", sans-serif;
+        text-shadow: 4px 4px black;
+    }
+
+.bi-search{
+    color: white;
+    margin-left: 45px;
+    position: relative;
+    z-index: 1;
+
+    &.bi-search::after{
+        content: '';
+        background-color: rgba(55, 58, 67);
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        bottom: 55%;
+        right: 45%;
+        translate: 50% 50%;
+        z-index: -1;
+        border-radius: 100%;
+
+
+    }
+    
+}
+
+div i{
+    color: white;
+    margin-left: 6rem;
+    z-index: 1;
+    position: relative;
+}
+
+.addfriends{
+    
+    color: white;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    z-index: 1;
+
+}
+
+.bi-person-fill-add::after{
+         content: '';
+        background-color: rgba(55, 58, 67);
+        width: 300px;
+        height: 30px;
+        position: absolute;
+        bottom: 52%;
+        right: 10%;
+        translate: 71% 50%;
+        border-radius:15px;
+        z-index: -1;
+}
+/* profiles&Chats */
+
+
+.container{ 
+  padding: 10px;
+    margin: 20px;
+    display: flex;
+    
+
+    width: 400px;
+    .profiles{
+        width: 60px;
+        border-radius: 100%;
+    }
+}
+
+.text{
+    color: white;
+
+}
+.distl{
+    margin-left: 1em;
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+        justify-content: space-between;
+    .ender{
+        display: flex;
+        justify-self: end
+    }
+
+}
+
+.innomine{
+    width: 100%;
+}
+
+.footer_bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:5px
+}
+
+.Footer_photo{
+    width: 30px;
+    border-radius: 100%;
+}
+
