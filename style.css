@@ -11,21 +11,22 @@ body{
 }
 
 main{
-   
+   overflow-y: auto;
     flex-grow: 1;
+    float: right;
 }
 
 .main_wrapper{
     height: 100vh;
-    display: flex;
     flex-direction: column;
+    overflow-y: auto;
 }
 .side_wrapper{
     background-color: rgba(28, 29, 34);
     display: flex;
     flex-grow: 1;
     margin-top: 10px;
-    overflow: scroll;
+    overflow: hidden;
 
     
 }
@@ -39,9 +40,11 @@ main{
 /* footer */
 
 footer{
-    height: 60px;
+    height: 80px;
     background-color: rgba(45, 45, 53);
     flex-shrink: 0;
+    border: 10px;
+    
 }
 /* pictures info and mesures */
 
@@ -171,15 +174,69 @@ div i{
     width: 100%;
 }
 
+/* footer */
 .footer_bar{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding:5px
+    color: white;
+
+    
+}
+
+.footer_description{
+    font-size: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
 }
 
 .Footer_photo{
-    width: 30px;
+    width: 25px;
+    height: 25px;
     border-radius: 100%;
+    position: relative;
+    translate: 50% 50%;
+    left: 8%;
+    top: 0%;
 }
+
+.bi-houses-fill{
+    font-size: 25px;
+   position: relative;
+   translate: 50% 5%;
+   bottom: 10%;
+   right: 45%;
+   
+   
+
+}
+
+.bi-bell-fill{
+    font-size: 25px;
+   position: relative;
+   translate: 20% 50%;
+   bottom: 30%;
+   right: 40%;
+   
+}
+
+
+.footer_info{
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 3rem;
+    margin-top: 1rem;
+}
+
+.personal{
+     font-size: 15px;
+    text-align: center;
+    margin-top: 2.5rem;
+    margin-left: 2rem;
+}
+
+
+
+
 
